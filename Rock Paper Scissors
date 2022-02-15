@@ -1,1 +1,22 @@
-
+var rockPaperScissors= ['rock','papper','scissors'];
+const random=Math.floor(Math.random()*rockPaperScissors.length);
+var PlayerChoice= prompt("Rock,Papper or Scissor").toLowerCase();
+playRount(PlayerChoice,random);
+function playRount(PlayerChoice,random){
+     if(rockPaperScissors[random]==='rock'&&PlayerChoice==='papper'){
+         alert("Computer chose rock you win!");
+     }else if(rockPaperScissors[random]==='rock'&&PlayerChoice==='scissors'){
+         alert("Tou lose Computer chose Rock!");
+     }else if(rockPaperScissors[random]==='papper'&&PlayerChoice==='scissors'){
+         alert('You Win Computer chose papper');
+     }else if(rockPaperScissors[random]==='scissors'&&PlayerChoice==='papper'){
+         alert("You lose Computer Chose scissors");
+     }else if(rockPaperScissors[random]==="papper"&&PlayerChoice==='rock'){
+         alert('Computer chose papper You Lose');
+     }else if(rockPaperScissors[random]==='scissors'&&PlayerChoice==='rock'){
+         alert("You lose");
+     }
+     else{
+         alert("Incorrect");
+     }
+}
