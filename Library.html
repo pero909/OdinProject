@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<div class="header">
+<header>Library</header>
+    <button id="addBookBtn" onclick="bookModal()">Add Book</button>
+</div>
+<!-- Modal -->
+<div class="bookModal">
+  <div class="modalContent">
+         <form action="">
+             <h3 >Add Book</h3>
+             <input type="text" placeholder="Title" id="title">
+             <input type="text" placeholder="Author" id="author">
+             <input type="number" placeholder="Pages" id="pages">
+             Have you read the book?
+             <input type="checkbox" placeholder="Read?" id="isRead">
+             <button type="button" id="submitBookBtn" onclick="addBook()">Submit</button>
+         </form>
+  </div>
+
+</div>
+<div class="booksContainer">
+    <div class="books-Grid">
+
+       
+    </div>
+
+</div>
+</body>
+</html>
+<script 
